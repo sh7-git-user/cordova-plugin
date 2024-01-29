@@ -12,6 +12,9 @@
                 <param name="onload" value="true"/>
 			</feature>
 		</config-file>
+		<config-file parent="WEGLicenseCode" target="*-Info.plist">
+                       <string>in~58adcb93</string>
+                  </config-file>
 
 		<config-file parent="UIBackgroundModes" target="*Info.plist">
 			<array>
@@ -45,7 +48,9 @@
             <uses-permission android:name="android.permission.INTERNET"/>
             <uses-permission android:name="android.permission.WAKE_LOCK" />
         </config-file>
-        
+         <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <meta-data android:name="com.webengage.sdk.android.key" android:value="in~58adcb93" />
+        </config-file>
 
         
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
