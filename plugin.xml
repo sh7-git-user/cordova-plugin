@@ -51,7 +51,9 @@
          <config-file parent="/manifest/application" target="AndroidManifest.xml">
             <meta-data android:name="com.webengage.sdk.android.key" android:value="in~58adcb93" />
         </config-file>
-
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+          <meta-data android:name="com.webengage.sdk.android.environment" android:value="in" />
+         </config-file>
         
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <receiver
